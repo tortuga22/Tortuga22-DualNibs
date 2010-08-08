@@ -1,0 +1,467 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		32B2403D11FA002E00A0F613 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32B2403C11FA002E00A0F613 /* CoreGraphics.framework */; };
+		32B2403F11FA002E00A0F613 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32B2403E11FA002E00A0F613 /* QuartzCore.framework */; };
+		32B2404111FA002E00A0F613 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32B2404011FA002E00A0F613 /* UIKit.framework */; };
+		32B2408B11FB117500A0F613 /* VDDualNibsProtocols.h in Headers */ = {isa = PBXBuildFile; fileRef = 32B2408A11FB117500A0F613 /* VDDualNibsProtocols.h */; };
+		32B2408D11FB119600A0F613 /* VDDualNibs.h in Headers */ = {isa = PBXBuildFile; fileRef = 32B2408C11FB119600A0F613 /* VDDualNibs.h */; };
+		32B240C411FB13B200A0F613 /* libNinePatch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 32B240C011FB138A00A0F613 /* libNinePatch.a */; };
+		32B2410711FCBBE400A0F613 /* VDViewSpecificationProtocols.h in Headers */ = {isa = PBXBuildFile; fileRef = 32B2410611FCBBE400A0F613 /* VDViewSpecificationProtocols.h */; };
+		32B2410911FCBC0A00A0F613 /* VDRotatorProtocols.h in Headers */ = {isa = PBXBuildFile; fileRef = 32B2410811FCBC0A00A0F613 /* VDRotatorProtocols.h */; };
+		32B2411811FCBC7800A0F613 /* NSObject-VDAssociatedObjectUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 32B2411611FCBC7800A0F613 /* NSObject-VDAssociatedObjectUtilities.h */; };
+		32B2411911FCBC7800A0F613 /* NSObject-VDAssociatedObjectUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B2411711FCBC7800A0F613 /* NSObject-VDAssociatedObjectUtilities.m */; };
+		32B2411B11FCBCBF00A0F613 /* VDDualNibsCategories.h in Headers */ = {isa = PBXBuildFile; fileRef = 32B2411A11FCBCBF00A0F613 /* VDDualNibsCategories.h */; };
+		32B2413111FCC19B00A0F613 /* VDViewSpecification.h in Headers */ = {isa = PBXBuildFile; fileRef = 32B2412F11FCC19B00A0F613 /* VDViewSpecification.h */; };
+		32B2413211FCC19B00A0F613 /* VDViewSpecification.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B2413011FCC19B00A0F613 /* VDViewSpecification.m */; };
+		32B2413511FCC1EF00A0F613 /* VDContentCarryingViewSpecification.h in Headers */ = {isa = PBXBuildFile; fileRef = 32B2413311FCC1EF00A0F613 /* VDContentCarryingViewSpecification.h */; };
+		32B2413611FCC1EF00A0F613 /* VDContentCarryingViewSpecification.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B2413411FCC1EF00A0F613 /* VDContentCarryingViewSpecification.m */; };
+		32B2413911FCC24C00A0F613 /* VDImageViewSpecification.h in Headers */ = {isa = PBXBuildFile; fileRef = 32B2413711FCC24C00A0F613 /* VDImageViewSpecification.h */; };
+		32B2413A11FCC24C00A0F613 /* VDImageViewSpecification.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B2413811FCC24C00A0F613 /* VDImageViewSpecification.m */; };
+		32B2413D11FCC28800A0F613 /* VDLabelSpecification.h in Headers */ = {isa = PBXBuildFile; fileRef = 32B2413B11FCC28800A0F613 /* VDLabelSpecification.h */; };
+		32B2413E11FCC28800A0F613 /* VDLabelSpecification.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B2413C11FCC28800A0F613 /* VDLabelSpecification.m */; };
+		32B2414111FCC2E600A0F613 /* VDControlStateSpecification.h in Headers */ = {isa = PBXBuildFile; fileRef = 32B2413F11FCC2E600A0F613 /* VDControlStateSpecification.h */; };
+		32B2414211FCC2E600A0F613 /* VDControlStateSpecification.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B2414011FCC2E600A0F613 /* VDControlStateSpecification.m */; };
+		32B2414511FCC30A00A0F613 /* VDButtonStateSpecification.h in Headers */ = {isa = PBXBuildFile; fileRef = 32B2414311FCC30A00A0F613 /* VDButtonStateSpecification.h */; };
+		32B2414611FCC30A00A0F613 /* VDButtonStateSpecification.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B2414411FCC30A00A0F613 /* VDButtonStateSpecification.m */; };
+		32B2414911FCC3CE00A0F613 /* VDButtonSpecification.h in Headers */ = {isa = PBXBuildFile; fileRef = 32B2414711FCC3CE00A0F613 /* VDButtonSpecification.h */; };
+		32B2414A11FCC3CE00A0F613 /* VDButtonSpecification.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B2414811FCC3CE00A0F613 /* VDButtonSpecification.m */; };
+		32B2414D11FCC47C00A0F613 /* VDViewRotator.h in Headers */ = {isa = PBXBuildFile; fileRef = 32B2414B11FCC47C00A0F613 /* VDViewRotator.h */; };
+		32B2414E11FCC47C00A0F613 /* VDViewRotator.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B2414C11FCC47C00A0F613 /* VDViewRotator.m */; };
+		32B2415211FCE49500A0F613 /* VDFactoryProtocols.h in Headers */ = {isa = PBXBuildFile; fileRef = 32B2415111FCE49500A0F613 /* VDFactoryProtocols.h */; };
+		32B2416E11FCF2A500A0F613 /* VDViewRotatorFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 32B2416C11FCF2A500A0F613 /* VDViewRotatorFactory.h */; };
+		32B2416F11FCF2A500A0F613 /* VDViewRotatorFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B2416D11FCF2A500A0F613 /* VDViewRotatorFactory.m */; };
+		32B2418211FDF62500A0F613 /* VDViewControllerRotationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 32B2418011FDF62500A0F613 /* VDViewControllerRotationManager.h */; };
+		32B2418311FDF62500A0F613 /* VDViewControllerRotationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B2418111FDF62500A0F613 /* VDViewControllerRotationManager.m */; };
+		32FC3E74120CD2D1005B4346 /* VDDualNibViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 32FC3E72120CD2D1005B4346 /* VDDualNibViewController.h */; };
+		32FC3E75120CD2D1005B4346 /* VDDualNibViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32FC3E73120CD2D1005B4346 /* VDDualNibViewController.m */; };
+		AA747D9F0F9514B9006C5449 /* DualNibs_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* DualNibs_Prefix.pch */; };
+		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		32B240BF11FB138A00A0F613 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 32B240BB11FB138A00A0F613 /* NinePatch.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = NinePatch;
+		};
+		32B240C211FB13A300A0F613 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 32B240BB11FB138A00A0F613 /* NinePatch.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = NinePatch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		32B2403C11FA002E00A0F613 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		32B2403E11FA002E00A0F613 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		32B2404011FA002E00A0F613 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		32B2408A11FB117500A0F613 /* VDDualNibsProtocols.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDDualNibsProtocols.h; sourceTree = "<group>"; };
+		32B2408C11FB119600A0F613 /* VDDualNibs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDDualNibs.h; sourceTree = "<group>"; };
+		32B240BB11FB138A00A0F613 /* NinePatch.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = NinePatch.xcodeproj; path = "../../../ninepatch/Tortuga22-NinePatch/xcode/NinePatch/NinePatch.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		32B2410611FCBBE400A0F613 /* VDViewSpecificationProtocols.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDViewSpecificationProtocols.h; sourceTree = "<group>"; };
+		32B2410811FCBC0A00A0F613 /* VDRotatorProtocols.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDRotatorProtocols.h; sourceTree = "<group>"; };
+		32B2411611FCBC7800A0F613 /* NSObject-VDAssociatedObjectUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject-VDAssociatedObjectUtilities.h"; sourceTree = "<group>"; };
+		32B2411711FCBC7800A0F613 /* NSObject-VDAssociatedObjectUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject-VDAssociatedObjectUtilities.m"; sourceTree = "<group>"; };
+		32B2411A11FCBCBF00A0F613 /* VDDualNibsCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDDualNibsCategories.h; sourceTree = "<group>"; };
+		32B2412F11FCC19B00A0F613 /* VDViewSpecification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDViewSpecification.h; sourceTree = "<group>"; };
+		32B2413011FCC19B00A0F613 /* VDViewSpecification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VDViewSpecification.m; sourceTree = "<group>"; };
+		32B2413311FCC1EF00A0F613 /* VDContentCarryingViewSpecification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDContentCarryingViewSpecification.h; sourceTree = "<group>"; };
+		32B2413411FCC1EF00A0F613 /* VDContentCarryingViewSpecification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VDContentCarryingViewSpecification.m; sourceTree = "<group>"; };
+		32B2413711FCC24C00A0F613 /* VDImageViewSpecification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDImageViewSpecification.h; sourceTree = "<group>"; };
+		32B2413811FCC24C00A0F613 /* VDImageViewSpecification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VDImageViewSpecification.m; sourceTree = "<group>"; };
+		32B2413B11FCC28800A0F613 /* VDLabelSpecification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDLabelSpecification.h; sourceTree = "<group>"; };
+		32B2413C11FCC28800A0F613 /* VDLabelSpecification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VDLabelSpecification.m; sourceTree = "<group>"; };
+		32B2413F11FCC2E600A0F613 /* VDControlStateSpecification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDControlStateSpecification.h; sourceTree = "<group>"; };
+		32B2414011FCC2E600A0F613 /* VDControlStateSpecification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VDControlStateSpecification.m; sourceTree = "<group>"; };
+		32B2414311FCC30A00A0F613 /* VDButtonStateSpecification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDButtonStateSpecification.h; sourceTree = "<group>"; };
+		32B2414411FCC30A00A0F613 /* VDButtonStateSpecification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VDButtonStateSpecification.m; sourceTree = "<group>"; };
+		32B2414711FCC3CE00A0F613 /* VDButtonSpecification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDButtonSpecification.h; sourceTree = "<group>"; };
+		32B2414811FCC3CE00A0F613 /* VDButtonSpecification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VDButtonSpecification.m; sourceTree = "<group>"; };
+		32B2414B11FCC47C00A0F613 /* VDViewRotator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDViewRotator.h; sourceTree = "<group>"; };
+		32B2414C11FCC47C00A0F613 /* VDViewRotator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VDViewRotator.m; sourceTree = "<group>"; };
+		32B2415111FCE49500A0F613 /* VDFactoryProtocols.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDFactoryProtocols.h; sourceTree = "<group>"; };
+		32B2416C11FCF2A500A0F613 /* VDViewRotatorFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDViewRotatorFactory.h; sourceTree = "<group>"; };
+		32B2416D11FCF2A500A0F613 /* VDViewRotatorFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VDViewRotatorFactory.m; sourceTree = "<group>"; };
+		32B2418011FDF62500A0F613 /* VDViewControllerRotationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDViewControllerRotationManager.h; sourceTree = "<group>"; };
+		32B2418111FDF62500A0F613 /* VDViewControllerRotationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VDViewControllerRotationManager.m; sourceTree = "<group>"; };
+		32FC3E72120CD2D1005B4346 /* VDDualNibViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDDualNibViewController.h; sourceTree = "<group>"; };
+		32FC3E73120CD2D1005B4346 /* VDDualNibViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VDDualNibViewController.m; sourceTree = "<group>"; };
+		AA747D9E0F9514B9006C5449 /* DualNibs_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DualNibs_Prefix.pch; sourceTree = SOURCE_ROOT; };
+		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D2AAC07E0554694100DB518D /* libDualNibs.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDualNibs.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D2AAC07C0554694100DB518D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32B240C411FB13B200A0F613 /* libNinePatch.a in Frameworks */,
+				AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */,
+				32B2403D11FA002E00A0F613 /* CoreGraphics.framework in Frameworks */,
+				32B2403F11FA002E00A0F613 /* QuartzCore.framework in Frameworks */,
+				32B2404111FA002E00A0F613 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DFFF38A50411DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2AAC07E0554694100DB518D /* libDualNibs.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* DualNibs */ = {
+			isa = PBXGroup;
+			children = (
+				32B240C111FB138E00A0F613 /* Dependencies */,
+				32B2408611FB113900A0F613 /* Categories */,
+				32B2408411FB112700A0F613 /* Protocols */,
+				08FB77AEFE84172EC02AAC07 /* Classes */,
+				32C88DFF0371C24200C91783 /* Other Sources */,
+				0867D69AFE84028FC02AAC07 /* Frameworks */,
+				034768DFFF38A50411DB9C8B /* Products */,
+				32B2408C11FB119600A0F613 /* VDDualNibs.h */,
+			);
+			name = DualNibs;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AACBBE490F95108600F1A2B1 /* Foundation.framework */,
+				32B2403C11FA002E00A0F613 /* CoreGraphics.framework */,
+				32B2403E11FA002E00A0F613 /* QuartzCore.framework */,
+				32B2404011FA002E00A0F613 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		08FB77AEFE84172EC02AAC07 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				32B2412B11FCC11400A0F613 /* Factories + Managers */,
+				32B2412A11FCC10300A0F613 /* Rotators */,
+				32B2412911FCC0F100A0F613 /* View Specifications */,
+				32B2408511FB112F00A0F613 /* View Controllers */,
+				32B2408311FB111200A0F613 /* Views */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		32B2408311FB111200A0F613 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		32B2408411FB112700A0F613 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				32B2408A11FB117500A0F613 /* VDDualNibsProtocols.h */,
+				32B2410611FCBBE400A0F613 /* VDViewSpecificationProtocols.h */,
+				32B2410811FCBC0A00A0F613 /* VDRotatorProtocols.h */,
+				32B2415111FCE49500A0F613 /* VDFactoryProtocols.h */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		32B2408511FB112F00A0F613 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				32FC3E72120CD2D1005B4346 /* VDDualNibViewController.h */,
+				32FC3E73120CD2D1005B4346 /* VDDualNibViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		32B2408611FB113900A0F613 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				32B2411611FCBC7800A0F613 /* NSObject-VDAssociatedObjectUtilities.h */,
+				32B2411711FCBC7800A0F613 /* NSObject-VDAssociatedObjectUtilities.m */,
+				32B2411A11FCBCBF00A0F613 /* VDDualNibsCategories.h */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		32B240BC11FB138A00A0F613 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				32B240C011FB138A00A0F613 /* libNinePatch.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		32B240C111FB138E00A0F613 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				32B240BB11FB138A00A0F613 /* NinePatch.xcodeproj */,
+			);
+			name = Dependencies;
+			sourceTree = "<group>";
+		};
+		32B2412911FCC0F100A0F613 /* View Specifications */ = {
+			isa = PBXGroup;
+			children = (
+				32B2412F11FCC19B00A0F613 /* VDViewSpecification.h */,
+				32B2413011FCC19B00A0F613 /* VDViewSpecification.m */,
+				32B2413311FCC1EF00A0F613 /* VDContentCarryingViewSpecification.h */,
+				32B2413411FCC1EF00A0F613 /* VDContentCarryingViewSpecification.m */,
+				32B2413711FCC24C00A0F613 /* VDImageViewSpecification.h */,
+				32B2413811FCC24C00A0F613 /* VDImageViewSpecification.m */,
+				32B2413B11FCC28800A0F613 /* VDLabelSpecification.h */,
+				32B2413C11FCC28800A0F613 /* VDLabelSpecification.m */,
+				32B2413F11FCC2E600A0F613 /* VDControlStateSpecification.h */,
+				32B2414011FCC2E600A0F613 /* VDControlStateSpecification.m */,
+				32B2414311FCC30A00A0F613 /* VDButtonStateSpecification.h */,
+				32B2414411FCC30A00A0F613 /* VDButtonStateSpecification.m */,
+				32B2414711FCC3CE00A0F613 /* VDButtonSpecification.h */,
+				32B2414811FCC3CE00A0F613 /* VDButtonSpecification.m */,
+			);
+			name = "View Specifications";
+			sourceTree = "<group>";
+		};
+		32B2412A11FCC10300A0F613 /* Rotators */ = {
+			isa = PBXGroup;
+			children = (
+				32B2414B11FCC47C00A0F613 /* VDViewRotator.h */,
+				32B2414C11FCC47C00A0F613 /* VDViewRotator.m */,
+				32B2418011FDF62500A0F613 /* VDViewControllerRotationManager.h */,
+				32B2418111FDF62500A0F613 /* VDViewControllerRotationManager.m */,
+			);
+			name = Rotators;
+			sourceTree = "<group>";
+		};
+		32B2412B11FCC11400A0F613 /* Factories + Managers */ = {
+			isa = PBXGroup;
+			children = (
+				32B2416C11FCF2A500A0F613 /* VDViewRotatorFactory.h */,
+				32B2416D11FCF2A500A0F613 /* VDViewRotatorFactory.m */,
+			);
+			name = "Factories + Managers";
+			sourceTree = "<group>";
+		};
+		32C88DFF0371C24200C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				AA747D9E0F9514B9006C5449 /* DualNibs_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D2AAC07A0554694100DB518D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA747D9F0F9514B9006C5449 /* DualNibs_Prefix.pch in Headers */,
+				32B2408B11FB117500A0F613 /* VDDualNibsProtocols.h in Headers */,
+				32B2408D11FB119600A0F613 /* VDDualNibs.h in Headers */,
+				32B2410711FCBBE400A0F613 /* VDViewSpecificationProtocols.h in Headers */,
+				32B2410911FCBC0A00A0F613 /* VDRotatorProtocols.h in Headers */,
+				32B2411811FCBC7800A0F613 /* NSObject-VDAssociatedObjectUtilities.h in Headers */,
+				32B2411B11FCBCBF00A0F613 /* VDDualNibsCategories.h in Headers */,
+				32B2413111FCC19B00A0F613 /* VDViewSpecification.h in Headers */,
+				32B2413511FCC1EF00A0F613 /* VDContentCarryingViewSpecification.h in Headers */,
+				32B2413911FCC24C00A0F613 /* VDImageViewSpecification.h in Headers */,
+				32B2413D11FCC28800A0F613 /* VDLabelSpecification.h in Headers */,
+				32B2414111FCC2E600A0F613 /* VDControlStateSpecification.h in Headers */,
+				32B2414511FCC30A00A0F613 /* VDButtonStateSpecification.h in Headers */,
+				32B2414911FCC3CE00A0F613 /* VDButtonSpecification.h in Headers */,
+				32B2414D11FCC47C00A0F613 /* VDViewRotator.h in Headers */,
+				32B2415211FCE49500A0F613 /* VDFactoryProtocols.h in Headers */,
+				32B2416E11FCF2A500A0F613 /* VDViewRotatorFactory.h in Headers */,
+				32B2418211FDF62500A0F613 /* VDViewControllerRotationManager.h in Headers */,
+				32FC3E74120CD2D1005B4346 /* VDDualNibViewController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D2AAC07D0554694100DB518D /* DualNibs */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "DualNibs" */;
+			buildPhases = (
+				D2AAC07A0554694100DB518D /* Headers */,
+				D2AAC07B0554694100DB518D /* Sources */,
+				D2AAC07C0554694100DB518D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				32B240C311FB13A300A0F613 /* PBXTargetDependency */,
+			);
+			name = DualNibs;
+			productName = DualNibs;
+			productReference = D2AAC07E0554694100DB518D /* libDualNibs.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "DualNibs" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 0867D691FE84028FC02AAC07 /* DualNibs */;
+			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 32B240BC11FB138A00A0F613 /* Products */;
+					ProjectRef = 32B240BB11FB138A00A0F613 /* NinePatch.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				D2AAC07D0554694100DB518D /* DualNibs */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		32B240C011FB138A00A0F613 /* libNinePatch.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libNinePatch.a;
+			remoteRef = 32B240BF11FB138A00A0F613 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2AAC07B0554694100DB518D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32B2411911FCBC7800A0F613 /* NSObject-VDAssociatedObjectUtilities.m in Sources */,
+				32B2413211FCC19B00A0F613 /* VDViewSpecification.m in Sources */,
+				32B2413611FCC1EF00A0F613 /* VDContentCarryingViewSpecification.m in Sources */,
+				32B2413A11FCC24C00A0F613 /* VDImageViewSpecification.m in Sources */,
+				32B2413E11FCC28800A0F613 /* VDLabelSpecification.m in Sources */,
+				32B2414211FCC2E600A0F613 /* VDControlStateSpecification.m in Sources */,
+				32B2414611FCC30A00A0F613 /* VDButtonStateSpecification.m in Sources */,
+				32B2414A11FCC3CE00A0F613 /* VDButtonSpecification.m in Sources */,
+				32B2414E11FCC47C00A0F613 /* VDViewRotator.m in Sources */,
+				32B2416F11FCF2A500A0F613 /* VDViewRotatorFactory.m in Sources */,
+				32B2418311FDF62500A0F613 /* VDViewControllerRotationManager.m in Sources */,
+				32FC3E75120CD2D1005B4346 /* VDDualNibViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		32B240C311FB13A300A0F613 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = NinePatch;
+			targetProxy = 32B240C211FB13A300A0F613 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB921F08733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/DualNibs.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = DualNibs_Prefix.pch;
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = DualNibs;
+			};
+			name = Debug;
+		};
+		1DEB922008733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				DSTROOT = /tmp/DualNibs.dst;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = DualNibs_Prefix.pch;
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = DualNibs;
+			};
+			name = Release;
+		};
+		1DEB922308733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PREBINDING = NO;
+				SDKROOT = iphoneos4.0;
+			};
+			name = Debug;
+		};
+		1DEB922408733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PREBINDING = NO;
+				SDKROOT = iphoneos4.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "DualNibs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB921F08733DC00010E9CD /* Debug */,
+				1DEB922008733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "DualNibs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB922308733DC00010E9CD /* Debug */,
+				1DEB922408733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}

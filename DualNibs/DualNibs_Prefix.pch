@@ -1,0 +1,38 @@
+//
+// Prefix header for all source files of the 'CocoaTouchStaticLibrary' target in the 'CocoaTouchStaticLibrary' project.
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif
+
+#define VDForceYesOrNo(COND) ((( COND ))?(YES):(NO))
+#define VDYesOrNoString(ABOOL) ((ABOOL)?(@"YES"):(@"NO"))
+
+#define VD_DEBUG_LOGGING
+#ifdef VD_DEBUG_LOGGING
+#define DLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
+#define LLog(STR) DLog(@"%@",STR)
+#else
+#define DLog(...)
+#define LLog(STR) 
+#endif
+
+#define VDLogException(E) DLog(@"Caught '%@' < '%@', '%@' >.",[E name],[E reason],[E userInfo])
+#define VDLogError(E) DLog(@"Error: '%@', '%@', '%@'.",[E localizedDescription],[E localizedFailureReason],[E localizedRecoveryOptions]);
+
+#define VD_ASSERTION_CHECKING
+#ifdef VD_ASSERTION_CHECKING
+#define VDParameterAssert(COND) NSParameterAssert(COND)
+#define VDCParameterAssert(COND) NSCParameterAssert(COND)
+#define VDAssert(COND,DESC) NSAssert(COND,DESC)
+#define VDCAssert(COND,DESC) NSCAssert(COND,DESC)
+#else
+#define VDParameterAssert(...) 
+#define VDCParameterAssert(...) 
+#define VDAssert(...) 
+#define VDCAssert(...) 
+#endif
+
+#define VDCompareYieldingNSComparisonResult(LHS, RHS) ((( LHS ) < ( RHS ))?(NSOrderedAscending):((( LHS ) > ( RHS ))?(NSOrderedDescending):(NSOrderedSame)))
+#define VDInvertComparisonResult(RESULT) (((( RESULT ) == NSOrderedAscending)?(NSOrderedDescending):((( RESULT ) == NSOrderedDescending)?(NSOrderedAscending):(NSOrderedSame)))
